@@ -1,0 +1,567 @@
+
+$primary-color: #1d7292;
+$secondary-color: #fff;
+$btn-background: #ff981f;
+
+$title-size: 40px;
+
+$btn-padding: 20px;
+
+@mixin border-radius($radius) {
+	--webkit-border-radius: $radius;
+	  --moz-border-radius: $radius;
+	    --o-border-radius: $radius;
+		  border-radius: $radius;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+	box-sizing: border-box;
+}
+
+.head {
+
+	background: rgba(237, 249, 252, 0.7) url('../../images/banner.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 580px;
+
+	.banner-image {
+
+		.header-text {
+
+			padding-top: 65px;
+			margin-left: 614px; 
+
+			.title {
+				font-size: 24px;
+			}
+
+			.btn {
+				font-size: 20px;
+				color: $secondary-color;
+				background-color: $btn-background;
+				padding: $btn-padding;
+				@include border-radius(6px);
+				font-weight: bold;
+			}
+
+			iframe {
+				margin-left: 250px;
+			}
+		}
+	}
+}
+
+.sec-one {
+	
+	padding-top: 100px;
+
+	.pic {
+
+		background: url('../../images/circle.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		height: 570px;
+
+		.side-pic {
+			height: 550px;
+			padding-left: 55px;
+		}
+	}
+
+	.text {
+
+		padding: 150px 0px 0px 150px;
+
+		.title {
+			font-size: $title-size;
+			color: $primary-color;
+		}
+
+		.des {
+			font-size: 18px;
+			line-height: 1.6;
+			letter-spacing: 1.3px;
+		}
+	}
+}
+
+.sec-two {
+	
+	padding-top: 100px;
+
+	.pic {
+
+		background: url('../../images/circle.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		height: 570px;
+
+		.side-pic {
+			height: 550px;
+			padding-left: 55px;
+		}
+	}
+
+	.text {
+
+		padding-top: 200px;
+
+		.title {
+			font-size: $title-size;
+			color: $primary-color;
+		}
+
+		.des {
+			font-size: 18px;
+			line-height: 1.6;
+			letter-spacing: 1.3px;
+		}
+	}
+}
+
+.sec-three {
+
+	@extend .sec-one;
+
+	.text {
+
+		padding-top: 0px;
+	}
+}
+
+.sec-four {
+	@extend .sec-two;
+}
+
+.sec-five {
+	@extend .sec-one;
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+	
+	.head {
+
+		.banner-image {
+
+			.header-text {
+
+				padding-top: 40px;
+				margin-left: 200px; 
+
+				.title {
+					font-size: 22px;
+				}
+
+				.btn {
+					font-size: 18px;
+					padding: 18px;
+				}
+
+				iframe {
+					margin-left: 150px;
+				}
+			}
+		}
+	}
+
+	.sec-one {
+
+		.pic {
+
+			height: 370px;
+
+			.side-pic {
+				height: 350px;
+				padding-left: 30px;
+			}
+		}
+
+		.text {
+
+			padding: 50px 0px 0px 50px;
+
+			.title {
+				font-size: 36px;
+			}
+
+			.des {
+				font-size: 17px;
+			}
+		}
+	}
+
+	.sec-two {
+
+		.pic {
+
+			height: 370px;
+
+			.side-pic {
+				height: 350px;
+				padding-left: 30px;
+			}
+		}
+
+		.text {
+
+			padding-top: 50px;
+
+			.title {
+				font-size: 32px;
+			}
+
+			.des {
+				font-size: 17px;
+			}
+		}
+	}
+
+	.sec-three {
+
+		.pic {
+			margin-top: 90px;
+		}
+
+		.text {
+
+			.title {
+				font-size: 36px;
+				margin-top: -60px;
+			}
+
+			.des {
+				font-size: 15px;
+			}
+		}
+	}
+
+	.sec-four {
+
+		.text {
+
+			.title {
+				font-size: 36px;
+				margin-top: 40px;
+			}
+		}
+	}
+
+	.sec-five {
+
+		.text {
+
+			.title {
+				font-size: 36px;
+				margin-top: -60px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	
+	.head {
+
+		.banner-image {
+
+			.header-text {
+
+				margin-left: 120px; 
+
+				.title {
+					font-size: 20px;
+				}
+
+				.btn {
+					font-size: 17px;
+					padding: 16px;
+				}
+
+				iframe {
+					margin-left: 100px;
+				}
+			}
+		}
+	}
+
+	.sec-one {
+
+		.pic {
+
+			height: 300px;
+
+			.side-pic {
+				height: 300px;
+				padding-left: 0px;
+			}
+		}
+
+		.text {
+
+			padding: 20px 0px 0px 30px;
+
+			.title {
+				font-size: 28px;
+			}
+
+			.des {
+				font-size: 16px;
+			}
+		}
+	}
+
+	.sec-two {
+
+		.pic {
+
+			height: 300px;
+
+			.side-pic {
+				height: 300px;
+				padding-left: 0px;
+			}
+		}
+
+		.text {
+
+			padding-top: 20px;
+
+			.title {
+				font-size: 28px;
+			}
+
+			.des {
+				font-size: 16px;
+			}
+		}
+	}
+
+	.sec-three {
+
+		.pic {
+			margin-top: 140px;
+		}
+
+		.text {
+
+			.title {
+				font-size: 28px;
+				margin-top: -60px;
+			}
+
+			.des {
+				font-size: 14px;
+			}
+		}
+	}
+
+	.sec-four {
+
+		.text {
+
+			.title {
+				font-size: 28px;
+				margin-top: 0px;
+			}
+
+			.des {
+				font-size: 15px;
+			}
+		}
+	}
+
+	.sec-five {
+
+		.text {
+
+			.title {
+				font-size: 28px;
+				margin-top: -60px;
+			}
+
+			.des {
+				font-size: 15px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	
+	.head {
+
+		.header-text {
+
+			iframe {
+				width: 300px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	
+	.sec-one {
+
+		.pic {
+
+			height: 570px;
+
+			.side-pic {
+				height: 570px;
+				padding-left: 55px;
+			}
+		}
+
+		.text {
+
+			.title {
+				font-size: $title-size;
+			}
+
+			.des {
+				font-size: 18px;
+			}
+		}
+	}
+
+	.sec-two {
+
+		.pic {
+
+			height: 570px;
+
+			.side-pic {
+				height: 570px;
+				padding-left: 55px;
+			}
+		}
+
+		.text {
+
+			.title {
+				font-size: $title-size;
+			}
+
+			.des {
+				font-size: 18px;
+			}
+		}
+	}
+
+	.sec-three {
+
+		.pic {
+			margin-top: 0px;
+		}
+
+		.text {
+
+			.title {
+				padding-top: 70px;
+			}
+		}
+	}
+
+	.sec-five {
+
+		.text {
+
+			.title {
+				padding-top: 90px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	
+	.head {
+
+		.banner-image {
+
+			.header-text {
+
+				padding-top: 60px;
+				margin-left: 0px; 
+
+				.title {
+					font-size: 20px;
+				}
+
+				.btn {
+					font-size: 16px;
+					padding: 16;
+				}
+
+				iframe {
+					margin-left: 50px;
+				}
+			}
+		}
+	}
+
+	.sec-one {
+
+		.pic {
+
+			height: 500px;
+
+			.side-pic {
+				height: 500px;
+				padding-left: 40px;
+			}
+		}
+
+		.text {
+			padding-top: 70px;
+		}
+	}
+
+	.sec-two {
+
+		.pic {
+
+			height: 500px;
+
+			.side-pic {
+				height: 500px;
+				padding-left: 40px;
+			}
+		}
+
+		.text {
+			padding-top: 70px;
+		}
+	}
+
+	.sec-three {
+
+		.text {
+			padding-top: 60px;
+		}
+	}
+}
+
+@media only screen and (max-width: 340px) {
+	.head {
+
+		.header-text {
+
+			iframe {
+				margin: 0px;
+				width: 230px;
+			}
+		}
+	}
+}

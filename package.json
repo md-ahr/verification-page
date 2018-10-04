@@ -1,0 +1,27 @@
+{
+  "name": "verification_page_v.2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack",
+    "prod": "webpack -p",
+    "watch": "webpack -watch",
+    "server": "webpack-dev-server --open --port 80"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "bootstrap4": "0.0.1-security",
+    "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^2.0.0",
+    "image-webpack-loader": "^4.3.1",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^3.11.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^2.11.0"
+  }
+}
